@@ -1,0 +1,46 @@
+Algorithm for Number Guessing Game
+1.Start.
+2.Generate a random number secret_number between 1 and 100.
+3.Initialize guess = -1 and attempts = 0
+4.While guess isn't equal to secret_number:
+5.Input guess from the user
+6.Increment attempts by 1
+7.If guess <secret_number, print "Higher".
+8.Else if guess> secret_number, print "Lower".
+9.Else, print "Correct! you guessed it in attempts."
+10.Stop.
+
+PSEUDOCODE:
+START
+    secret_number ← RANDOM(1, 100)
+    guess ← -1
+    attempts ← 0
+
+    WHILE guess ≠ secret_number DO
+        INPUT guess
+        attempts ← attempts + 1
+        IF guess < secret_number THEN
+            PRINT "Higher"
+        ELSE IF guess > secret_number THEN
+            PRINT "Lower"
+        ELSE
+            PRINT "Correct! You guessed it in", attempts, "attempts."
+        ENDIF
+    ENDWHILE
+END
+
+FLOWCHART:
+A[Start] --> B[Generate secret_number (1-100)]
+    B --> C[Initialize guess = -1, attempts = 0]
+    C --> D{Is guess = secret_number?}
+    D -->|No| E[Input guess]
+    E --> F[Increment attempts by 1]
+    F --> G{Is guess < secret_number?}
+    G -->|Yes| H[Print "Higher"]
+    H --> D
+    G -->|No| I{Is guess > secret_number?}
+    I -->|Yes| J[Print "Lower"]
+    J --> D
+    I -->|No| K[Print "Correct! Attempts = attempts"]
+    K --> L[Stop]
+    D -->|Yes| K

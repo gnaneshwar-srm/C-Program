@@ -1,0 +1,30 @@
+Algorithm to Find the GCD Using the Euclidean Algorithm
+1.Start.
+2.Input the two numbers a and b (where a≥b)
+3.while b isn't equal to 0:
+4.Set a = a%b (modulus operation)
+5.Swap the values of a and b.
+6.When b = 0, a contains the GCD.
+7.print the value of a(the GCD)
+8.Stop.
+
+PSEUDOCODE:
+START
+    INPUT a, b
+    WHILE b ≠ 0 DO
+        temp ← a % b
+        a ← b
+        b ← temp
+    ENDWHILE
+    PRINT a
+END
+
+FLOWCHART:
+A[Start] --> B[Input a, b]
+    B --> C{Is b ≠ 0?}
+    C -->|Yes| D[Set temp = a % b]
+    D --> E[Set a = b]
+    E --> F[Set b = temp]
+    F --> C
+    C -->|No| G[Print a]
+    G --> H[Stop]

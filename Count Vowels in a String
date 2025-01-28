@@ -1,0 +1,36 @@
+Algorithm to Count Vowels in a String
+1.Start.
+2.Input the string str from the user.
+3.Initialize count = 0.
+4.Convert the string to lowercase for uniformity.
+5.Iterate through each character in str:
+6.If the character is a vowel ('a','e','i','o','u'), increment count by 1.
+7.Print the value of count(total number of vowels).
+8.Stop.
+
+PSEUDOCODE:
+START
+    INPUT str
+    count ← 0
+    str ← TO_LOWERCASE(str)
+    FOR each character ch IN str DO
+        IF ch IN ['a', 'e', 'i', 'o', 'u'] THEN
+            count ← count + 1
+        ENDIF
+    ENDFOR
+    PRINT count
+END
+
+FLOWCHART:
+A[Start] --> B[Input str]
+    B --> C[Set count = 0]
+    C --> D[Convert str to lowercase]
+    D --> E[Set i = 0]
+    E --> F{Is i < length(str)?}
+    F -->|Yes| G{Is str[i] a vowel?}
+    G -->|Yes| H[Increment count]
+    G -->|No| I[Increment i by 1]
+    H --> I
+    I --> F
+    F -->|No| J[Print count]
+    J --> K[Stop]

@@ -1,0 +1,33 @@
+Algorithm to Calculate the Sum of Even Numbers:
+1.Start.
+2.Input the value of n from the user.
+3.Initialize sum = 0.
+Use a loop to iterate from 1 to n:
+Check if the current number is even (number % 2 == 0).
+If it is, add the number to sum.
+After the loop ends, print the value of sum.
+Stop
+
+PSEUDOCODE:
+START
+    INPUT n
+    sum ← 0
+    FOR i FROM 1 TO n DO
+        IF i MOD 2 = 0 THEN
+            sum ← sum + i
+        ENDIF
+    ENDFOR
+    PRINT sum
+END
+
+FLOWCHART:
+Start: Begin the program.
+Input n: Read the number n from the user.
+Initialize sum = 0: Set the sum accumulator to 0.
+For Loop (1 to n): Check every number in the range.
+Condition (i MOD 2 = 0): Is the current number even?
+Yes: Add it to the sum.
+No: Skip to the next iteration.
+End of Loop: Once all numbers are checked, move on.
+Output Sum: Display the calculated sum.
+Stop: End the program.

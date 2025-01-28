@@ -1,0 +1,19 @@
+Algorithm for Celsius to Fahrenheit Conversion
+1.Start.
+2.Input the temperature in Celsius (C).
+3.Use the formula: F = (Cx9/5)+32.
+4.Print the temperature in Fahrenheit (F).
+5.Stop
+
+PSEUDOCODE:
+START
+    INPUT C
+    F ← (C × 9 / 5) + 32
+    PRINT F
+END
+
+FLOWCHART:
+A[Start] --> B[Input C (temperature in Celsius)]
+    B --> C[Calculate F = (C × 9/5) + 32]
+    C --> D[Print F (temperature in Fahrenheit)]
+    D --> E[Stop]

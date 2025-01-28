@@ -1,0 +1,35 @@
+Algorithm to Calculate Factorial Using Recursion
+1.Start.
+2.Define a recursive function Factorial(num):
+3.If num = 0 or num = 1, return 1 (base case).
+4.Otherwise, return num * Factorial(num - 1).
+5.Input a number n from the user.
+6.Call the Factorial(n) function and store the result in a variable result.
+7.Print the value of result.
+8.Stop.
+
+PSEUDOCODE:
+START
+    FUNCTION Factorial(num)
+        IF num = 0 OR num = 1 THEN
+            RETURN 1
+        ELSE
+            RETURN num * Factorial(num - 1)
+        ENDIF
+    ENDFUNCTION
+
+    INPUT n
+    result ← Factorial(n)
+    PRINT result
+END
+
+FLOWCHART:
+A[Start] --> B[Input n]
+    B --> C[Call Factorial(n)]
+    C --> D[Is n = 0 or 1?]
+    D -->|Yes| E[Return 1]
+    D -->|No| F[Return n * Factorial(n - 1)]
+    F --> C
+    E --> G[Store Result]
+    G --> H[Print Result]
+    H --> I[Stop] 

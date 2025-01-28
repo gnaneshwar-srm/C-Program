@@ -21,13 +21,16 @@ START
 END
 
 FLOWCHART:
-Start: Begin the program.
-Input n: Read the number n from the user.
-Initialize sum = 0: Set the sum accumulator to 0.
-For Loop (1 to n): Check every number in the range.
-Condition (i MOD 2 = 0): Is the current number even?
-Yes: Add it to the sum.
-No: Skip to the next iteration.
-End of Loop: Once all numbers are checked, move on.
-Output Sum: Display the calculated sum.
-Stop: End the program.
+A[Start] --> B[Input n]
+    B --> C[Initialize sum = 0]
+    C --> D[Set i = 1]
+    D --> E{Is i <= n?}
+    E -->|Yes| F{Is i even?}
+    F -->|Yes| G[Add i to sum]
+    F -->|No| H[Increment i by 1]
+    G --> H
+    H --> E
+    E -->|No| I[Output sum]
+    I --> J[Stop]
+yaml
+Copy code

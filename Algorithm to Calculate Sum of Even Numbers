@@ -2,11 +2,11 @@ Algorithm to Calculate the Sum of Even Numbers:
 1.Start.
 2.Input the value of n from the user.
 3.Initialize sum = 0.
-Use a loop to iterate from 1 to n:
-Check if the current number is even (number % 2 == 0).
-If it is, add the number to sum.
-After the loop ends, print the value of sum.
-Stop
+4.Use a loop to iterate from 1 to n:
+5.Check if the current number is even (number % 2 == 0).
+6.If it is, add the number to sum.
+7.After the loop ends, print the value of sum.
+8.Stop
 
 PSEUDOCODE:
 START

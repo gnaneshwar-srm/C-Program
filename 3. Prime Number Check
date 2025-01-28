@@ -1,0 +1,41 @@
+Algorithm to Check if a Number is Prime
+1.Start.
+2.Input the number n.
+3.If n <= 1, it is not a prime number. Print "Not Prime" and stop.
+4.Initialize a loop variable i = 2.
+5.While i <= √n:
+6.If n % i == 0, then n is not a prime number. Print "Not Prime" and stop.
+7.Increment i by 1.
+8.If no divisor is found, print "Prime".
+9.Stop.
+
+PSEUDOCODE:
+START
+    INPUT n
+    IF n <= 1 THEN
+        PRINT "Not Prime"
+        STOP
+    ENDIF
+    FOR i FROM 2 TO √n DO
+        IF n MOD i = 0 THEN
+            PRINT "Not Prime"
+            STOP
+        ENDIF
+    ENDFOR
+    PRINT "Prime"
+END
+
+FLOWCHART:
+A[Start] --> B[Input n]
+    B --> C{Is n <= 1?}
+    C -->|Yes| D[Print "Not Prime"]
+    C -->|No| E[Set i = 2]
+    E --> F{Is i ≤ √n?}
+    F -->|Yes| G{Is n MOD i = 0?}
+    G -->|Yes| H[Print "Not Prime"]
+    G -->|No| I[Increment i by 1]
+    I --> F
+    F -->|No| J[Print "Prime"]
+    J --> K[Stop]
+    D --> K
+    H --> K
